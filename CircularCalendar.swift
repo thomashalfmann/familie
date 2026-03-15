@@ -12,6 +12,15 @@ struct CalendarEvent: Identifiable, Equatable {
 
 // MARK: - Main App
 
+@main
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            CircularCalendarApp()
+        }
+    }
+}
+
 struct CircularCalendarApp: View {
     @State private var events: [CalendarEvent] = []
     @State private var startMonth: Int = 1 // February (0-indexed)
@@ -371,7 +380,3 @@ let monthColors: [Color] = [
     Color(red: 0.51, green: 0.69, blue: 1.00),
     Color(red: 0.27, green: 0.54, blue: 1.00)
 ]
-
-// MARK: - App Preview (for Swift Playgrounds)
-// Zeige die App in der Canvas Preview an
-CircularCalendarApp()
