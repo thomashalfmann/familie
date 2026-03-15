@@ -1,5 +1,4 @@
 import SwiftUI
-import PlaygroundSupport
 
 // MARK: - Data Models
 
@@ -373,9 +372,6 @@ let monthColors: [Color] = [
     Color(red: 0.27, green: 0.54, blue: 1.00)
 ]
 
-// MARK: - Playground Live View
-
-PlaygroundPage.current.setLiveView(
-    CircularCalendarApp()
-        .frame(width: 800, height: 1200)
-)
+// MARK: - App Preview (for Swift Playgrounds)
+// Zeige die App in der Canvas Preview an
+CircularCalendarApp()
